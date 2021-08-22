@@ -1,0 +1,41 @@
+.secondary-content {
+  color: #024e76;
+  width: 80%;
+  margin-left: 160px;
+}
+
+.secondary-content p {
+  font-size: 16px;
+  line-height: 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.secondary-content ul {
+  color: #39a6b2;
+  margin: 15px 20px 15px 20px;
+}
+
+.secondary-content li {
+  color: #39a6b2;
+  margin: 10px 0px 10px 0px;
+}
+
+.hero {
+  background-position: bottom;
+  height: auto;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.page-title {
+  color: #fce138;
+  display: inline-block;
+  border-bottom: 4px solid;
+  padding: 0px 80px 15px 80px;
+  font-weight: normal;
+  font-size: 42px;
+  font-style: italic;
+}
