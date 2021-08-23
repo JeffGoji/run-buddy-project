@@ -12,12 +12,19 @@ body {
 /*Header and nav bar styling*/
 
 header {
+  background-image: url("../images/hero-bg.jpg");
+  background-size: cover;
+  background-position: 80%;
+  background-attachment: fixed;
   padding: 20px 35px;
   background-color: #39a6b2;
   padding: 20px 50px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  position: -webkit-sticky; /*Safari browser webkit*/
+  position: sticky;
+  top: 0;
 }
 
 header h1 {
@@ -50,6 +57,13 @@ header nav ul li a {
   font-weight: lighter;
   font-size: 1.55vw;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a:hover {
+  background: #fce138;
+  color: #024e76;
+  border-radius: 15px;
+  text-shadow: none;
 }
 
 /*Header and nav bar styling end*/
@@ -91,7 +105,8 @@ section {
 .hero {
   background-image: url("../images/hero-bg.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: 80%;
+  background-attachment: fixed;
   align-items: flex-start;
 }
 
@@ -135,6 +150,10 @@ section {
 
 .hero-form label {
   margin: 0 5px;
+}
+
+.hero-form button:hover {
+  background-color: #39a6b2;
 }
 
 .form-input {
@@ -183,11 +202,26 @@ section {
   padding-bottom: 50px;
   width: 80%;
   border-bottom: 1px solid #39a6b2;
+
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
+
+/*step effect*/
+.step:last-child {
+  border-bottom: 1px solid #39a6b2;
+}
+
+.step:nth-child(even) {
+  border-bottom: 1px solid #39a6b2;
+}
+
+.step:last-child {
+  border-bottom: none;
+}
+/*End step effect*/
 
 .step h3 {
   color: #024e76;
@@ -286,13 +320,9 @@ section {
   justify-content: space-around;
 }
 
-.text-left {
-  text-align: left;
-}
+/*End of Trainers section*/
 
-.text-right {
-  text-align: right;
-}
+/*Contact and form section*/
 
 .contact {
   background-color: #024e76;
@@ -346,6 +376,23 @@ section {
   height: 400px;
 }
 
+/*contact form info*/
+
+/*Form focus effects*/
+.form-input {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.form-input:focus {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.form-input:focus {
+  background-color: rgba(255, 255, 255, 1);
+  outline: none;
+}
+/*end form focus effects*/
+
 .contact-form button {
   width: 100%;
   border: none;
@@ -376,6 +423,15 @@ section {
   font-size: 16px;
 }
 
+.contact-form button:hover {
+  color: #fce138;
+  background: #39a6b2;
+}
+
+/*End of contact and form seciton*/
+
+/*Flex row section*/
+
 .flex-row {
   display: flex;
 }
@@ -385,6 +441,7 @@ section {
   header {
     padding-bottom: 0;
     justify-content: center;
+    position: relative;
   }
 
   header h1 {
